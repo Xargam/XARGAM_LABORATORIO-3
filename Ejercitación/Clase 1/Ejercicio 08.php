@@ -1,80 +1,61 @@
 <?php
-$num = 53;
-$numLetras = "";
+$num = (string)rand(20,60);
+$numLetras = "El numero está fuera de rango.";
 
-if ($num <= 60 && $num >= 20) {
-    //Se realiza la escritura de las decenas.
-    if ($num == 60) {
-        $numLetras = "sesenta";
-    } else if ($num < 60 && $num > 50) {
-            $numLetras = "cincuenta y ";
-    } else if ($num == 50) {
-            $numLetras = "cincuenta";
-    } else if ($num < 50 && $num > 40) {
-            $numLetras = "cuarenta y ";
-    } else if ($num == 40) {
-            $numLetras = "cuarenta";
-    } else if ($num < 40 && $num > 30) {
-            $numLetras = "treinta y ";
-    } else if ($num == 30) {
-            $numLetras = "treinta";
-    } else if ($num < 30 && $num > 20) {
-            $numLetras = "veinti";
-    } else  {
-            $numLetras = "veinte";
-    }
-
-    //Se realiza la escritura de las unidades y en caso ! decena = 2 ! se colocan tildes.
-    switch(substr($num,1,2))
+if ($num <= "60" && $num >= "20")
+{
+    switch($num[0])
     {
-        case 1:
-        $numLetras.="uno";
+        case "6":
+        $numLetras = "Sesenta";
         break;
-        case 2:
-        if($num < 30)
-        {
-            $numLetras.="dós";
-        }
-        else
-        {
-            $numLetras.="dos";
-        }
+        case "5":
+        $numLetras = "Cincuenta";
         break;
-        case 3:
-        if($num < 30)
-        {
-            $numLetras.="trés";
-        }
-        else
-        {
-            $numLetras.="tres";
-        }
+        case "4":
+        $numLetras = "Cuarenta";
         break;
-        case 4:
-        $numLetras.="cuatro";
+        case "3":
+        $numLetras = "Treinta";
         break;
-        case 5:
-        $numLetras.="cinco";
-        break;
-        case 6:
-        if($num < 30)
-        {
-            $numLetras.="séis";
-        }
-        else
-        {
-            $numLetras.="seis";
-        }
-        break;
-        case 7:
-        $numLetras.="siete";
-        break;
-        case 8:
-        $numLetras.="ocho";
-        break;
-        case 9:
-        $numLetras.="nueve";
+        case "2":
+        $numLetras = ($num[1] == "0")?"Veinte" : "Veinti";
         break;
     }
-    echo $numLetras;
+    $numLetras .= ($num[0] > "2" && $num[1] > 0 ) ? " y " : ""; 
+    if($num[1] != 0)
+    {
+        switch($num[1])
+        {
+            case "1":
+            $numLetras.="uno";
+            break;
+            case "2":
+            $numLetras .= ($num[0] == "2")? "dós" : "dos";
+            break;
+            case "3":
+            $numLetras .= ($num[0] == "2")? "trés" : "tres";
+            break;
+            case "4":
+            $numLetras.="cuatro";
+            break;
+            case "5":
+            $numLetras.="cinco";
+            break;
+            case "6":
+            $numLetras .= ($num[0] == "2")? "séis" : "seis";
+            break;
+            case "7":
+            $numLetras.="siete";
+            break;
+            case "8":
+            $numLetras.="ocho";
+            break;
+            case "9":
+            $numLetras.="nueve";
+            break;
+        }
+    }
 }
+echo $num , "<br/>" , $numLetras;
+?>

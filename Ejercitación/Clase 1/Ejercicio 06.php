@@ -1,20 +1,20 @@
 <?php
-$operador = "-";
-$op1 = 55;
-$op2 = 2;
+$operador = "+-*/"; 
+$op1 = rand(0,5000);
+$op2 = rand(0,5000);
 
-switch($operador)
+switch($operador[rand(0,3)])
 {
     case "+":
-    echo $op1 + $op2;
+    echo $op1 , " + " ,  $op2 , " = " , $op1 + $op2;
     break;
 
     case "-":
-    echo $op1 - $op2;
+    echo $op1 , " - " ,  $op2 , " = " , $op1 - $op2;
     break;
 
     case "*":
-    echo $op1 * $op2;
+    echo $op1 , " * " ,  $op2 , " = " , $op1 * $op2;
     break;
 
     case "/":
@@ -24,7 +24,7 @@ switch($operador)
     }
     else    
     {
-        echo $op1 / $op2;
+        echo $op1 , " / " ,  $op2 , " = " , $op1 / $op2;
     }
     break;
 

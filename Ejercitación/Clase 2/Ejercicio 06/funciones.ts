@@ -1,5 +1,9 @@
+var miFuncion : Function = function(num : number ) : number {  return num ** 3; }
+var saludar : Function = function() : string
+{
+   return "Hola Mundo!!!"; 	
+}
 
-var miFuncion : Function = function obtenerCubo(num : number ) : number {    return num ** 3; }
-console.log( miFuncion(2));
+/*console.log( miFuncion(2) );
 miFuncion = (i : number ) =>{ i**3 };
-console.log(miFuncion(10));
+console.log(miFuncion(10));*/

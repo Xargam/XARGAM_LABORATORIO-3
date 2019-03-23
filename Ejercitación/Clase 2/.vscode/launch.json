@@ -8,7 +8,13 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/Ejercicio 06\\funciones.ts",
+            "program": "${workspaceRoot}/app.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/Ejercicio 06\\app.ts",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ]

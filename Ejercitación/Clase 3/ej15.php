@@ -10,7 +10,8 @@ function CalcularPotencias()
     {
         for($j = 1 ; $j < 5 ; $j++ )
         {
-            echo pow($i,$j)."<br/>";
+            echo "{$i} elevado a {$j} = ".pow($i,$j)."<br>";
         }
     }
 }
+?>

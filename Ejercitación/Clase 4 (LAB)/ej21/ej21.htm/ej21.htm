@@ -9,16 +9,23 @@ usuario eligió. Utilizar la estructura ‘switch’*/-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script>"./ej21.ts/operaciones.ts/"</script>
+    <script>"../ej21.ts/operaciones.ts/"</script>
     <title>Ejercicio 21</title>
 </head>
 <body>
+    <div>
+        <input type="number" name="num" id="num1" value="0">
+        <input type="number" nmae="num" id="num2" value="0">
+    </div>
     <div>
         <input type="radio" name="op" value="+" checked/>Suma<br>
         <input type="radio" name="op" value="-">Resta<br>
         <input type="radio" name="op" value="*">Multiplicacion<br>
         <input type="radio" name="op" value="/">Division<br>
     </div>
-     
+    <div>
+    <input type="text" name="resultado" id="resultado" value="0" disabled>
+    <input type="button" value="Calcular" name="btnCalcular" id="btnCalcular" onclick="calcular()">
+    </div>
 </body>
 </html>

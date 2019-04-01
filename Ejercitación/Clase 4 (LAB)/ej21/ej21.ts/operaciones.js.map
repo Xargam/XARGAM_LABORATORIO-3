@@ -1,0 +1,1 @@
+{"version":3,"file":"operaciones.js","sourceRoot":"","sources":["operaciones.ts"],"names":[],"mappings":";AAAA;;;;iDAIiD;AACjD,SAAS,QAAQ;IAEb,IAAI,OAAO,GAAsB,QAAQ,CAAC,cAAc,CAAC,MAAM,CAAE,CAAC,KAAK,CAAC;IACxE,OAAO,CAAC,GAAG,CAAC,OAAO,CAAC,CAAC;IACF,QAAQ,CAAC,cAAc,CAAC,WAAW,CAAE,CAAC,KAAK,GAAG,OAAO,CAAC;AAC7E,CAAC"}

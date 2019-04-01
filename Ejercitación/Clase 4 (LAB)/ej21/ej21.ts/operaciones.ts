@@ -3,11 +3,9 @@ números), un botón (con la leyenda ‘Calcular’) y cuatro controles de tipo 
 resta, multiplicación y división). Cuando se pulsa el botón una función deberá mostrar el
 resultado (en la consola y en otro cuadro de texto), de acuerdo al tipo de operación que el
 usuario eligió. Utilizar la estructura ‘switch’*/
-function operar()
+function calcular()
 {
-    let numero1 = (<HTMLInputElement>document.getElementById("yhh"));
-
-    if(numero1.checked == true && )
-    {
-    }
+    let numero1 = (<HTMLInputElement>document.getElementById("num1")).value;
+    console.log(numero1);
+    (<HTMLInputElement>document.getElementById("resultado")).value = numero1;
 }

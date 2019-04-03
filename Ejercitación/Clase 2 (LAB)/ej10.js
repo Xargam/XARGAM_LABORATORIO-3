@@ -19,5 +19,5 @@ function stringCase(cadena) {
     }
     return resultado;
 }
-console.log(stringCase("HOLA12A"));
+console.log(stringCase("HOLA12Aa"));
 //# sourceMappingURL=ej10.js.map

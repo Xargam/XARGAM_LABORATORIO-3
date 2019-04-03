@@ -1,0 +1,2 @@
+$ sudo apt-get install nodejs npm (Instala el servidor y el gestor de paquetes npm de NODEJS)
+$ npm install -g typescript (Instala el modulo de typescripts)

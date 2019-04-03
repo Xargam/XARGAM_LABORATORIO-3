@@ -23,7 +23,7 @@ function stringCase(cadena : string) : stringCaseResult
     return resultado;
 }
 
-console.log( stringCase("HOLA12A") );
+console.log( stringCase("HOLA12Aa") );
 
 
 

@@ -1,3 +1,4 @@
+
 <?php 
 /*Aplicación Nº 12 (Arrays asociativos)
 Realizar las líneas de código necesarias para generar un Array asociativo $lapicera, que

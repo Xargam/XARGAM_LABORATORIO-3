@@ -1,0 +1,51 @@
+<!--17- Confeccione un formulario que muestre una serie de títulos de películas con su
+respectivo checkbox. Al pulsar el botón, mostrar las películas seleccionadas por consola.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 17</title>
+    <script src="./moviesConsole.js"></script>
+</head>
+<body>
+    <hr>
+    <form>
+        <table align="center" border="1" bordercolor="violet gold black" width="39%" >
+            <caption>¡Seleccionar peliculas para verlas por consola!</caption>
+            <thead bgcolor="silver black gold" >
+                <th align="left">Peliculas</th>
+                <th>Seleccionadas</th>
+            </thead>
+            <tbody bgcolor="gold green black" >
+                <tr>
+                    <td>Narnia II</td>
+                    <td align="right"><input type="checkbox" name="movie" value="Narnia II" ></td>
+                    
+                </tr>
+                <tr>
+                    <td>Madagascar II</td>
+                    <td align="right"><input type="checkbox" name="movie" value="Madagascar II"></td>
+                </tr>
+                <tr>
+                    <td>Dumbo</td>
+                    <td align="right"><input type="checkbox" name="movie" value="Dumbo"></td>
+                </tr>
+                <tr>
+                    <td>Ralph</td>
+                    <td align="right"><input type="checkbox" name="movie" value="Ralph"></td>
+                </tr>
+                <tr>
+                    <td>Harry Potter 2</td>
+                    <td align="right"><input type="checkbox" name="movie" value="Harry Potter 2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="Ver mi catalogo" style="width:40em" onclick="moviesConsole()"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <hr>
+</body>
+</html>

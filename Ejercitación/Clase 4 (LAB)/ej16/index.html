@@ -1,0 +1,56 @@
+<!--16- Confeccionar un formulario que permita ingresar el nombre de una persona, su mail, su
+DNI (documento nacional de identidad) y finalmente su currículum vitae (este último dato
+hacerlo utilizando un <TEXTAREA>). Al pulsar el botón btnAceptar , por medio de una
+función en TypeScript, mostrar todos sus datos por consola.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./showConsole.js"></script>
+    <title>Ejercicio 16</title>
+</head>
+<body>
+    <form id="dataForm">
+        <table align="center" border = "1" bgcolor="green">
+            <tbody>
+                <caption><b>Ingreso de datos:</b></caption>
+                <tr>
+                    <td><i>Nombre:</i></td>
+                    <td><input type="text" name="txtBox" id="txtName" style="width: 13.4em;"></input></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td><i>Email:</i></td>
+                    <td><input type="email" name="txtBox" id="txtEmail" style="width: 13.4em;"></input></td></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i>D.N.I:</i></td>
+                    <td><input type="number" min="1" max="45000000"  name="txtBox"  id="txtDni"></input></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                        <td><i>Curriculum Vitae:</i></td>
+                        <td><textarea name="txtArea:" id="txtCurriculum" rows="10" ></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input onclick="showConsole()" type="button" style="width:24em;" id="btnAceptar" value="Aceptar" ></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

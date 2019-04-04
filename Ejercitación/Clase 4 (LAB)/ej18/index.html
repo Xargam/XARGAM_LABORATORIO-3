@@ -1,0 +1,67 @@
+<!--18 Confeccionar un formulario que solicite el ingreso del nombre de una persona y permita
+votar el sitio. Mediante un control de tipo radio, el visitante puede elegir entre las siguientes
+opciones: Excelente, Muy Bueno, Bueno, Regular y Malo. Al pulsar el botón, mostrar la
+opción elegida por consola.-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 18</title>
+    <script src="./showConsole.js"></script>
+</head>
+
+<body bgcolor="gold">
+    <form>
+        <table bgcolor="silver" border="1" align="center">
+            <thead>
+                <th colspan="2"><b>Contanos que te parece este sitio:</b></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tu nombre:</td>
+                    <td><input type="text" id=txtName style="width:22em"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Excelente</td>
+                    <td><input type="radio" name="option" value="Excelente" checked></td>
+                </tr>
+                <tr>
+                    <td>Muy bueno</td>
+                    <td><input type="radio" name="option" value="Muy bueno"></td>
+                </tr>
+                <tr>
+                    <td>Bueno</td>
+                    <td><input type="radio" name="option" value="Bueno"></td>
+                </tr>
+                <tr>
+                    <td>Regular</td>
+                    <td><input type="radio" name="option" value="Regular"></td>
+                </tr>
+                <tr>
+                    <td>Malo</td>
+                    <td><input type="radio" name="option" value="Malo"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><input type="button" id="btnEnviar" style="width:30em" value="Enviar" onclick="showConsole()"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+
+</html>

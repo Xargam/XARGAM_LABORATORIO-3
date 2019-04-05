@@ -1,0 +1,203 @@
+<!--20- Confeccionar un formulario que muestre un control de cada tipo y los muestre todos
+deshabilitados. (Cuando conozca JavaScript podemos habilitarlos por ejemplo si el visitante
+ingresa una clave correcta, por ahora vea como queda visualmente el formulario con los
+controles deshabilitados)-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 20</title>
+</head>
+
+<body>
+    <form disabled aria-disabled="true">
+        <fieldset>
+            <legend>Conjunto de controles de un formulario HTML</legend>
+            <table border="1">
+                <thead align="left">
+                    <th>Tipo</th>
+                    <th>Control</th>
+                    <th>Subtipo</th>
+                    <th>Traducción</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="23">input (ingreso)</td>
+                        <td><input type="button" value="Boton 1" disabled></td>
+                        <td>button</td>
+                        <td>Botón</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" disabled></td>
+                        <td>checkbox</td>
+                        <td>Caja(Casillas de verificación)</td>
+                    </tr>
+                    <tr>
+                        <td><input type="color" disabled></td>
+                        <td>color</td>
+                        <td>Color</td>
+                    </tr>
+                    <tr>
+                        <td><input type="date" value="2019-04-04" disabled></td>
+                        <td>date</td>
+                        <td>Fecha</td>
+                    </tr>
+                    <tr>
+                        <td><input type="datetime" disabled></td>
+                        <td>datetime</td>
+                        <td>Fecha y hora</td>
+                    </tr>
+                    <tr>
+                        <td><input type="datetime-local" value="2019-04-04T15:00" disabled></td>
+                        <td>datetime-local</td>
+                        <td>Fecha y hora local</td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" value="spore@gmail.com" disabled></td>
+                        <td>email</td>
+                        <td>Correo electrónico</td>
+                    </tr>
+                    <tr>
+                        <td><input type="file" disabled></td>
+                        <td>file</td>
+                        <td>Archivo</td>
+                    </tr>
+                    <tr>
+                        <td><input type="hidden"></td>
+                        <td>hidden</td>
+                        <td>Oculto</td>
+                    </tr>
+                    <tr>
+                        <td><input type="image" src="./imagen.png" alt="submit" width="400" height="50" disabled></td>
+                        <td>image</td>
+                        <td>Imagen</td>
+                    </tr>
+                    <tr>
+                        <td><input type="month" value="2019-04" disabled></td>
+                        <td>month</td>
+                        <td>Mes</td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" value="44.30" disabled></td>
+                        <td>number</td>
+                        <td>Número</td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" value="xxxxxxxx" disabled></td>
+                        <td>password</td>
+                        <td>Contraseña</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" disabled></td>
+                        <td>radio</td>
+                        <td>Radio(Toman el nombre ya que quedan "presionados")</td>
+                    </tr>
+                    <tr>
+                        <td>0<input type="range" min="0" max="10" disabled>10</td>
+                        <td>range</td>
+                        <td>Rango</td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" disabled></td>
+                        <td>reset</td>
+                        <td>Reiniciar</td>
+                    </tr>
+                    <tr>
+                        <td><input type="search" disabled></td>
+                        <td>search</td>
+                        <td>Buscar</td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Enviar" disabled></td>
+                        <td>submit</td>
+                        <td>Enviar</td>
+                    </tr>
+                    <tr>
+                        <td><input type="tel" value="+5401145894564" disabled></td>
+                        <td>tel</td>
+                        <td>Telefóno</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="Texto" disabled></td>
+                        <td>text</td>
+                        <td>Texto</td>
+                    </tr>
+                    <tr>
+                        <td><input type="time" value="10:00" disabled></td>
+                        <td>time</td>
+                        <td>Hora</td>
+                    </tr>
+                    <tr>
+                        <td><input type="url" value="www.google.com.ar" disabled></td>
+                        <td>url</td>
+                        <td>Localizador de recursos uniforme(Uniform Resource Locator)</td>
+                    </tr>
+                    <tr>
+                        <td><input type="week" value="2019-W04" disabled></td>
+                        <td>week</td>
+                        <td>Semana</td>
+                    </tr>
+                    <tr>
+                        <td>select (Seleccionar)</td>
+                        <td>
+                            <select disabled>
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </td>
+                        <td>select</td>
+                        <td>Seleccionar</td>
+                    </tr>
+                    <tr>
+                        <td>textarea (Área de texto)</td>
+                        <td><textarea name="txtArea" id="txtArea" cols="30" rows="1" disabled></textarea></td>
+                        <td>textarea</td>
+                        <td>Área de texto</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">button (Botón)</td>
+                        <td><button type="button" disabled>El botón más genial del mundo</button></td>
+                        <td>button</td>
+                        <td>Botón</td>
+                    </tr>
+                    <tr>
+                        <td><button type="menu" value="Botón para menú" disabled>Botón para menús</button></td>
+                        <td>menu</td>
+                        <td>Menú</td>
+                    </tr>
+                    <tr>
+                        <td><button type="reset" value="Botón de reinicio" disabled>Botón de reinicio</button></td>
+                        <td>reset</td>
+                        <td>Reiniciar</td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" value="Botón de envío" disabled>Botón de envío</button></td>
+                        <td>submit</td>
+                        <td>Enviar</td>
+                    </tr>
+                    <tr>
+                        <td>input-datalist (ingreso-lista de datos)</td>
+                        <td><input list="brownser" disabled>
+                        <datalist id="brownser">
+                            <option>Firefox</option>
+                            <option>Chrome</option>
+                        </datalist></td>
+                        <td>input-datalist</td>
+                        <td>Ingreso con lista de datos</td>
+                    </tr>
+                    <tr>
+                        <td>output (salida)</td>
+                        <td>Representación de un cálculo(Me parece mejor usar un script)</td>
+                        <td>output</td>
+                        <td>Salida</td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

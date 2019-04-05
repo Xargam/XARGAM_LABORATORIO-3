@@ -1,0 +1,30 @@
+<!--19- Confeccionar un formulario que muestre en un comboBox (SELECT) una serie de mails.
+Luego permitir que el visitante seleccione uno o varios mails del cuadro de selección-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 19</title>
+    <script src="./showEmail.js"></script>
+</head>
+
+<body>
+    <form>
+        <hr size="25" color="red">
+        <h1><b>Selección de E-MAIL:</b></h1>
+        <hr size="25" color="red">
+        <select id="cboMail" size="3" multiple>
+            <option value="leoxargam@gmail.com" selected>leoxargam@gmail.com</option>
+            <option value="king_grox@hotmail.com">king_grox@hotmail.com</option>
+            <option value="leokinggrox@hotmail.com">leokinggrox@gmail.com</option>
+        </select>
+        <hr>
+        <input type="button" id="btnEnviar" value="Enviar" onclick="showEmail()">
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!--23-Crear una página que posea un formulario que permita el ingreso del nombre, apellido,
+email y cantidad de horas trabajadas a la semana de un operario. Al pulsar el botón
+btnCalcular , se invocará a una función que calcule y muestre en un cuadro de texto (INPUT
+type=text) el salario mensual del operario. El salario se calculará por medio de la cantidad de
+horas trabajadas al mes por un coeficiente. Dicho coeficiente lo retornará la función
+ObtenerCoeficiente (por el momento será siempre 6.88).-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 23</title>
+    <script src="./ts-resources/main.js"></script>
+</head>
+
+<body>
+    <form id="form1">
+        <fieldset style="width:20em">
+            <legend>Datos del empleado:</legend>
+            <table>
+               <tr>
+                    <td>Nombre:</td>
+                    <td><input type="text" id="txtNombre" style="height:2em" placeholder="Nombre"></td>
+                </tr>
+                <tr>
+                    <td>Apellido:</td>
+                    <td><input type="text" id="txtApellido" style="height:2em" placeholder="Apellido"></td>
+                </tr>
+                <tr>
+                    <td>Correo electŕonico:</td>
+                    <td><input type="email" id="txtEmail" style="height:2em" placeholder="Correo electrónico"></td>
+                </tr>
+                <tr>
+                    <td>Horas trabajadas (Semanales):</td>
+                    <td><input type="number" id="txtHoras" style="height:2em" placeholder="Horas trabajadas"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" id="btnEnviar" value="Enviar" style="width:24em"
+                            onclick="mostrarSalario()"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

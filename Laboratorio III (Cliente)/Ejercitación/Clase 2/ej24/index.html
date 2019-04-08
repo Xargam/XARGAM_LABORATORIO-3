@@ -1,0 +1,52 @@
+<!--24- Realizar una página que permita el ingreso de: Apellido, Nombre, Dni y sexo de una
+persona. Si el usuario pulsa el botón de confirmación se invocará a una función encargada de
+validar cada uno de los datos ingresados (que tanto el nombre y apellido no estén vacíos,
+que el documento sea numérico y que el sexo sea o ‘m’ o ‘f’ ).-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 24</title>
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <h1>Dateas :x</h1>
+    <div>
+        <form id="form1" style="width: 15em;">
+            <fieldset>
+                <legend>Datos de la persona</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Nombre:</td>
+                            <td><input type="text" id="txtName"></td>
+                        </tr>
+                        <tr>
+                            <td>Apellido:</td>
+                            <td><input type="text" id="txtSurname"></td>
+                        </tr>
+                        <tr>
+                            <td>DNI:</td>
+                            <td><input type="text" id="txtDni"></td>
+                        </tr>
+                        <tr>
+                            <td>Género (f o m):</td>
+                            <td><input type="text" id="txtGenre"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="button" style="width:18.3em" onclick="validarCampos()"
+                                    value="Confirmar"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+    <div id="result" hidden></div>
+</body>
+
+</html>

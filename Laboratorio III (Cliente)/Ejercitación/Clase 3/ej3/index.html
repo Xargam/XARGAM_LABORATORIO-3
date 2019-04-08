@@ -13,7 +13,7 @@
     <hr>
     <h1>Empleados</h1>
     <hr>
-    <form>
+    <form action="http://localhost:8080/clase 4/ej0-1/admin.php" method="POST" enctype="multipart\form-data">
         <fieldset style="width:20em;" >
             <legend>Datos del Empleado</legend>
             <table border="1">
@@ -53,14 +53,20 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>sueldo:</td>
+                        <td>Sueldo:</td>
                         <td>
                             <input type="number" name="empData" id="salary">
                         </td>
                     </tr>
                     <tr>
+                        <td>Foto:</td>
                         <td>
-                            <input type="button" value="Aceptar" id="btnAceptar" onclick="showEmployee()"> 
+                            <input type="file" name="archivo" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Aceptar" id="btnAceptar"> 
                         </td>
                         <td>
                             <input type="reset" value="Cancelar" style="width:13em;">

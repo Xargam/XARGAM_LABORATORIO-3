@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 3</title>
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <hr>
+    <h1>Empleados</h1>
+    <hr>
+    <form action="../admin.php" method="POST" enctype="multipart/form-data">
+        <fieldset style="width:20em;" >
+            <legend>Datos del Empleado</legend>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Nombre:</td>
+                        <td>
+                            <input type="text" name="empData" id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Apellido:</td>
+                        <td>
+                            <input type="text" name="surname" id="surname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DNI:</td>
+                        <td>
+                            <input type="number" name="empData" id="dni">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sexo:</td>
+                        <td>
+                            <select name="genre" id="genre">
+                                <option>Femenino</option>
+                                <option>Masculino</option>
+                                <option>Indeterminado</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Legajo:</td>
+                        <td>
+                            <input type="number" name="file" id="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sueldo:</td>
+                        <td>
+                            <input type="number" name="empData" id="salary">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Foto:</td>
+                        <td>
+                            <input type="file" name="file" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Aceptar" id="btnAceptar"> 
+                        </td>
+                        <td>
+                            <input type="reset" value="Cancelar" style="width:13em;">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -7,8 +7,17 @@ $user = "root";
 $pass = "";
 $base = "usuarios";
 
-switch($queHago){
-
+switch($queHago)
+{
+    case "traer":
+        $array = array();
+        var_dump( $array);
+        echo "hola" ;
+        if( ($anUser = Usuario::traerUno(4)) === NULL )
+        {
+            var_dump($anUser);
+        }
+        break;
     case "establecerConexion":
 
         $con = Usuario::establecerConexion();
@@ -57,8 +66,8 @@ switch($queHago){
     break;
    
     case "mostrarConsulta":
-    
-        $con = @mysql_connect($host, $user, $pass);
+        vardump(Usuario::traerUno(1));
+        /*$con = @mysql_connect($host, $user, $pass);
         
         $sql = "SELECT * FROM producto";
 
@@ -82,8 +91,7 @@ switch($queHago){
         mysql_close($con);
         
         echo "<pre>mysql_close(con);</pre>";
-        
-    break;
+        break;*/
 
     case "ejecutarInsert":
     
@@ -126,8 +134,7 @@ switch($queHago){
         mysql_close($con);
         
         echo "<pre>mysql_close(con);</pre>";
-        
-    break;
+        break;
 
     case "ejecutarDelete":
     
@@ -146,10 +153,5 @@ switch($queHago){
         mysql_close($con);
         
         echo "<pre>mysql_close(con);</pre>";
-        
-    break;
-
-    default:
-        echo ":(";
-
+        break;
 }

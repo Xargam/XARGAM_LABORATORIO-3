@@ -1,0 +1,5 @@
+En Usuario crear un metodo estatico Verificar() que reciba 
+nombre del usuario  y la clave y devuelve true or false 
+para esto internamente llama a un traer usuario
+---------------------
+
